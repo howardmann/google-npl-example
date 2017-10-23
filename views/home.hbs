@@ -1,0 +1,17 @@
+<form action="/googlesentiment" method="post">
+  <fieldset style="width: 50%">
+    <legend>Check sentiment</legend>
+    <textarea name="text" rows="10" cols="50" placeholder="Enter text to analyze here">{{textinput}}</textarea>
+    <br>
+    <input type="submit" value="ANALYZE" style="background-color: rebeccapurple; color: white">
+  </fieldset>
+</form>
+
+<div id="main">
+  <p><strong>Score:</strong> <span style="background-color: {{color}}">{{score}}</span></p>
+  <p><strong>Magnitude:</strong> {{magnitude}}</p>
+  <p><em>Score legend:</em> <span style="background-color: red">-1.0 to -0.25</span> <span style="background-color: orange">-0.25 to +0.25</span> <span style="background-color: green">0.25 to 1.0</span></p>
+  <span id="results">
+    {{textresults}}
+  </span>
+</div>

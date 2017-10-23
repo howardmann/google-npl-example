@@ -1,5 +1,8 @@
 # dependency directory
-node_modules 
+node_modules
 
 # dotenv environment variables file
 .env
+
+#google secrets
+secrets
